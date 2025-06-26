@@ -1,0 +1,14 @@
+{
+  "auto_recall_enabled": {
+    "description": "是否启用自动撤回功能",
+    "type": "bool",
+    "hint": "启用后，上一条触发机器人的消息将在一分钟后自动撤回（需要机器人是管理员或群主）",
+    "default": false
+  },
+  "group_whitelist": {
+    "description": "群白名单",
+    "type": "list",
+    "hint": "在此列表中的群才会启用自动撤回功能，输入群号就行",
+    "default": []
+  }
+}

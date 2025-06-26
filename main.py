@@ -67,7 +67,7 @@ class AutoRecallHandler(Star):
             if message_id in self.recall_tasks:
                 del self.recall_tasks[message_id]
 
-    async def unload(self):
+    async def terminate(self):
         """插件卸载时取消所有撤回任务"""
         for task in self.recall_tasks.values():
             task.cancel()
